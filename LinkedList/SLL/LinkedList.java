@@ -14,7 +14,7 @@ public class LinkedList {
 		}
 
 		// if linked list is empty or not
-		if (head == null) 
+		while (head == null) 
 		{
 			head = n1;
 			return true;
@@ -80,6 +80,7 @@ public class LinkedList {
 		
 		System.out.println(head.getData()+" ");
 		head = head.getNext();
+		display(head);
 	}
 
 	//write getter for head as we need it in the tester for using this function
