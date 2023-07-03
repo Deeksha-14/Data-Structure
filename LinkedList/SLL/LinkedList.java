@@ -7,14 +7,17 @@ public class LinkedList {
 	public boolean insert(int data) { // creating the node
 	
 		Node n1 = new Node(data);
+		
 		System.out.println(n1);
+
+		
 		// checking if the node is created or not
 		if (n1 == null) {
 			return false;
 		}
 
 		// if linked list is empty or not
-		while (head == null) 
+		if (head == null) 
 		{
 			head = n1;
 			return true;
@@ -22,9 +25,11 @@ public class LinkedList {
 
 		// linked list is not empty so locate the last node
 		Node last = head; // not a new node. when it representing the same memory location as head. it
-							// basically becomes the first node and so on. hence when it becomes the last
-							// node setting its next to n1 will make n1 a part of it.
-		if (last.getNext() != null) {
+		// basically becomes the first node and so on. all of this works on actual memory level hence when it becomes the last
+		// node setting its next to n1 will make n1 a part of it.
+
+		
+		while (last.getNext() != null) {
 			last = last.getNext();
 
 		}
@@ -35,7 +40,7 @@ public class LinkedList {
 		return true;
 	}
 	
-	//not working as expected
+	
 	//method to print the size of linked List
 	public int size()
 	{
@@ -79,8 +84,7 @@ public class LinkedList {
 		
 		
 		System.out.println(head.getData()+" ");
-		head = head.getNext();
-		display(head);
+		display(head.getNext());
 	}
 
 	//write getter for head as we need it in the tester for using this function
@@ -98,6 +102,11 @@ public class LinkedList {
 	
 	
 	//display the reverse
+	//display the reverse using recursive approach
+	//insertion in middle
+	//deleteby value
+	//delete by position
 	//reverse the linked list
+	//reverse using recursion
 
 }
