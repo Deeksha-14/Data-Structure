@@ -22,7 +22,7 @@ public class ArrIndex {
 			System.out.print(arr[i] + " ");
 		}
 
-		System.out.println("Enter the number to find index :");
+		System.out.println("Enter the number to find index : ");
 		int m = sc.nextInt();
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == m) {
