@@ -2,6 +2,7 @@ package Day1;
 
 import java.util.Scanner;
 //two arrays are strictly similar
+//using flag
 public class TwoArrSame_2 {
 
 	public static void main(String[] args) {
