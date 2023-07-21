@@ -13,7 +13,7 @@ public class Fibonnaci_itr {
 		int n = sc.nextInt();
 		int[] f=new int[n];
 		
-		f[0]=0;
+		f[0] = 0;
 		f[1] = 1;
 		
 		
