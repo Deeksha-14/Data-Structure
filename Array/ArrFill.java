@@ -1,7 +1,7 @@
 package random;
 
 import java.util.Arrays;
-
+//by using inbuilt functions of array class
 public class arrFill {
 
 	public static void main(String[] args) {
